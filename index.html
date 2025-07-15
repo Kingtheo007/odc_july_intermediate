@@ -4,40 +4,114 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ODC July Intermediate</title>
-    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        .footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background-color: #f8f9fa;
+            padding: 20px 0;
+            text-align: center;
+        }
+        .card-img-top {
+            height: 200px;
+            object-fit: cover;
+        }
+    </style>
 </head>
 <body>
-    <h1>ODC July Intermediate</h1>
-    <h5>Welcome to the ODC July Intermediate page!</h5>
-    <p>This page is a placeholder for the ODC July Intermediate content.</p>
-    <p>Stay tuned for more updates!</p>
-    <p>For more information, visit our <a href="https://example.com">official website</a>.</p>
-    <p>Feel free to explore the content and learn more about our offerings.</p>
-     <p>If you have any questions, please contact us at <a href="mailto: info@example.com">info@example.com</a>.</p>
+    <!-- Header -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">ODC July</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
 
-     <div class="card" style="width: 18rem;">
-  <img src="assets/Screenshot 2025-07-14 215434.png" class="card-img-top" alt="...">
-  <div class="card-body">
-    <h5 class="card-title">TechSphere</h5>
-    <p class="card-text">This website was coded by Michael Maposa during the odc July intermediate classes.special thanks to our instructor Theo</p>
-    <a href="https://mike-odc.web.app/" class="btn btn-primary">Click here to visit</a>
-  </div>
-</div>
+    <!-- Carousel -->
+    <div id="mainCarousel" class="carousel slide mb-4" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://via.placeholder.com/1200x400" class="d-block w-100" alt="Slide 1">
+            </div>
+            <div class="carousel-item">
+                <img src="https://via.placeholder.com/1200x400" class="d-block w-100" alt="Slide 2">
+            </div>
+            <div class="carousel-item">
+                <img src="https://via.placeholder.com/1200x400" class="d-block w-100" alt="Slide 3">
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#mainCarousel" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#mainCarousel" role="button" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </a>
+    </div>
 
+    <!-- Card Grid -->
+    <div class="container mb-5">
+        <div class="row">
+            <!-- Card 1 -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="assets/Screenshot 2025-07-14 215434.png" class="card-img-top" alt="TechSphere">
+                    <div class="card-body">
+                        <h5 class="card-title">TechSphere</h5>
+                        <p class="card-text">This website was coded by Michael Maposa during the ODC July intermediate classes.</p>
+                        <a href="https://mike-odc.web.app/" class="btn btn-primary">Visit Site</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 2 -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Project 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Project 2</h5>
+                        <p class="card-text">Description of project 2 goes here.</p>
+                        <a href="#" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 3 -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Project 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Project 3</h5>
+                        <p class="card-text">Description of project 3 goes here.</p>
+                        <a href="#" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
-
-    <footer>
-        <p>&copy; 2025 ODC. All rights reserved.</p>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 ODC. All rights reserved.</p>
+        </div>
     </footer>
-  
-    <script>
-        console.log("ODC July Intermediate page loaded.");
-        // You can add more JavaScript functionality here
-        </script>
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-  
 </body>
 </html>
