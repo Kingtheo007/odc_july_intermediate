@@ -3,9 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ODC July Intermediate</title>
+    <title>Contact Us - ODC July Intermediate</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="icon" href="assets/noun-group-7790529.png" type="image/png">
     <style>
         .footer {
             position: fixed;
@@ -14,26 +13,6 @@
             background-color: #f8f9fa;
             padding: 20px 0;
             text-align: center;
-        }
-        .card {
-            height: 100%;
-            width: 100%;
-        }
-        .card-body {
-            display: flex;
-            flex-direction: column;
-            height: 100%;
-        }
-        .card-text {
-            flex-grow: 1;
-        }
-        .btn {
-            margin-top: auto;
-            width: 150px;
-        }
-        .card-img-top {
-            height: 200px;
-            object-fit: cover;
         }
     </style>
 </head>
@@ -49,50 +28,50 @@
                 <li class="nav-item">
                     <a class="nav-link" href="index.html">Home</a>
                 </li>
-                <li class="nav-item active">
+                <li class="nav-item">
                     <a class="nav-link" href="about.html">About</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item active">
                     <a class="nav-link" href="contact.html">Contact</a>
                 </li>
             </ul>
         </div>
     </nav>
-    <!-- About Section -->
-    <section class="container mt-5 mb-5">
+
+    <!-- Contact Form -->
+    <section class="container mt-5">
         <div class="row">
             <div class="col-md-8 mx-auto">
-                <h2>About ODC July Intermediate</h2>
-                <p>
-                    The ODC July Intermediate website is a showcase of projects and achievements by participants of the ODC July intermediate coding classes. 
-                    This platform highlights the collaborative spirit, creativity, and technical skills developed during the course. 
-                    Each card on the homepage represents a participant or a project, providing a glimpse into the diverse talents within the group.
-                </p>
-              
+                <h2>Contact Us</h2>
+                <p>Have questions or feedback? We'd love to hear from you!</p>
+                <form>
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" class="form-control" id="name" placeholder="Your Name">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" class="form-control" id="email" placeholder="Your Email">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea class="form-control" id="message" rows="5" placeholder="Your Message"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
             </div>
         </div>
     </section>
-   
+
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
             <p>&copy; 2025 ODC. All rights reserved.</p>
         </div>
     </footer>
+
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script>
-        $(document).ready(function() {
-            $('.card').hover(
-                function() {
-                    $(this).addClass('shadow-lg');
-                },
-                function() {
-                    $(this).removeClass('shadow-lg');
-                }
-            );
-        });
-    </script>
 </body>
 </html>
